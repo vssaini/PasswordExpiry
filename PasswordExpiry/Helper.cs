@@ -5,7 +5,7 @@ using System.Text;
 namespace PasswordExpiry
 {
     /// <summary>
-    /// Provide methods for retrieving password expiry date of user.
+    /// This class provide methods for retrieving password expiry date of user.
     /// </summary>
     class Helper
     {
