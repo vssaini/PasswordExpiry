@@ -51,6 +51,10 @@ namespace PasswordExpiry
                     Console.ForegroundColor = ConsoleColor.Green;
                     Console.WriteLine("The password of {0} will expire on {1}.", sAMAccountName, pwdExpTime);
                     Console.ResetColor();
+
+                    // Calculate the days left
+                    var diffDate = pwdExpTime - DateTime.Now;
+                    Console.WriteLine("The password will expire in {0} days.",diffDate.Days);
                 }
             }
             catch (Exception e)
